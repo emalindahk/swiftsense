@@ -1,0 +1,62 @@
+{
+  "mFirstName": true,
+  "mMiddleName": true,
+  "mLastName": true,
+  "mGenderM": true,
+  "mGenderF": true,
+  "mDOB": true,
+  "mAge": true,
+  "mPhoneNum": true,
+  "mCountry": "Kenya",
+  "countryText": true,
+  "mState": "",
+  "stateText": true,
+  "mCity": true,
+  "mAddress1": true,
+  "mAddress2": true,
+  "mOccupation": true,
+  "casteLayout": true,
+  "educationLayout": true,
+  "economicLayout": true,
+  "mPostal": true,
+  "countryStateLayout": true,
+  "mRelationship": true,
+  "mHeight": true,
+  "mWeight": true,
+  "mPulse": true,
+  "mBpSys": true,
+  "mBpDia": true,
+  "mTemperature": true,
+  "mCelsius": true,
+  "mFahrenheit": false,
+  "mSpo2": true,
+  "mBMI": true,
+  "mResp": true,
+  "privacyNotice": true,
+  "privacyNoticeText": "•Personal Information
+  
+Health Workers will collect personal information and health information from you for your medical records.
+
+•Use
+Your information is 
+- used for diagnosing and treating you. 
+- used to send you reminders, prescription information, and other related communication. 
+
+Your personal information will be anonymized for use in research, disease monitoring, and analysis to help us improve our products and services. We may disclose your personal information in certain specific circumstances given here [link to full privacy notice].
+
+•Protection Measures
+We provide physical, electronic, and procedural safeguards to protect information we process and maintain. 
+
+•Access and Correction
+You have the right to ask for a copy of any personal information we hold about you, as well as to ask for it to be corrected if you think it is wrong.
+
+If you’d like us to delete or modify your personal data that you have provided to us, please contact the Data Privacy Officer at support@intelehealth.io and we will respond in a reasonable time. 
+
+On clicking “Accept”, I consent to the collection and use of my personal data, including health information, and to give access to the above-mentioned entities.
+",
+
+"privacyNoticeText_Cebuano" : "",
+"privacyNoticeText_Odiya" : "",
+  "presciptionHeader1": "SwiftSense",
+  "presciptionHeader2": "ePrescription"
+}

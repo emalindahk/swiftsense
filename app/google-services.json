@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "43655493899",
+    "project_id": "mssa-eeb4f",
+    "storage_bucket": "mssa-eeb4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43655493899:android:c02df03106224b42f2ca0e",
+        "android_client_info": {
+          "package_name": "com.mssa.emk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43655493899-ki7pnr4ot5utt57ngf4v1cbbmhes0cjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrUqvr3wjV2TQe6z61svySKpub3WBbXXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43655493899-ki7pnr4ot5utt57ngf4v1cbbmhes0cjl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

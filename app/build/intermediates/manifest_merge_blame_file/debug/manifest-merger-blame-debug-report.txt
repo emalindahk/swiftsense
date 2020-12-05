@@ -1,0 +1,911 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mssa.emk"
+4    android:versionCode="46"
+5    android:versionName="2.1.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml
+10    <!-- To auto-complete the email text field in the login form with the user's emails -->
+11    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+11-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:5:5-71
+11-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:5:22-68
+12    <uses-permission android:name="android.permission.READ_PROFILE" />
+12-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:6:5-71
+12-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:6:22-68
+13    <uses-permission android:name="android.permission.READ_CONTACTS" />
+13-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:7:5-72
+13-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:7:22-69
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:8:5-81
+14-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+15-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:9:5-81
+15-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:10:5-80
+16-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:10:22-77
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:11:5-65
+17-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:11:22-62
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:12:5-67
+18-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:12:22-64
+19    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+19-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:13:5-80
+19-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:13:22-77
+20    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+20-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:14:5-74
+20-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:14:22-71
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
+21-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:15:5-79
+21-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:15:22-76
+22    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+22-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:16:5-75
+22-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:16:22-72
+23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+23-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:17:5-77
+23-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:17:22-74
+24    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+24-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:18:5-81
+24-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:18:22-78
+25
+26    <uses-feature
+26-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:20:5-22:35
+27        android:name="android.hardware.camera"
+27-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:21:9-47
+28        android:required="true" /> <!-- added support to lenova tab 2 -->
+28-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:22:9-32
+29    <uses-feature
+29-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:23:5-25:36
+30        android:name="android.hardware.camera.autofocus"
+30-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:24:9-57
+31        android:required="false" />
+31-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:25:9-33
+32
+33    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+33-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:23:5-68
+33-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:23:22-65
+34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+34-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:26:5-82
+34-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:26:22-79
+35    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+35-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:26:5-110
+35-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:26:22-107
+36
+37    <application
+37-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:27:5-271:19
+38        android:name="app.intelehealth.client.app.IntelehealthApplication"
+38-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:28:9-52
+39        android:allowBackup="true"
+39-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:29:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.1.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/7914bb671a5014924eaa42985c4db953/core-1.1.0/AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:icon="@mipmap/ic_launcher"
+42-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:30:9-43
+43        android:label="@string/app_name"
+43-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:31:9-41
+44        android:largeHeap="true"
+44-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:32:9-33
+45        android:networkSecurityConfig="@xml/network_security_configuration"
+45-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:33:9-76
+46        android:roundIcon="@mipmap/ic_launcher_round"
+46-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:34:9-54
+47        android:supportsRtl="true"
+47-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:35:9-35
+48        android:testOnly="true"
+49        android:theme="@style/AppTheme"
+49-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:36:9-40
+50        android:usesCleartextTraffic="true" >
+50-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:37:9-44
+51        <activity
+51-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:39:9-44:59
+52            android:name="app.intelehealth.client.activities.privacyNoticeActivity.PrivacyNotice_Activity"
+52-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:40:13-84
+53            android:configChanges="uiMode"
+53-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:43:13-43
+54            android:label="@string/title_activity_privacy_notice"
+54-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:41:13-66
+55            android:screenOrientation="portrait"
+55-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:42:13-49
+56            android:theme="@style/AppTheme.NoActionBar" />
+56-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:44:13-56
+57        <activity
+57-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:45:9-50:59
+58            android:name="app.intelehealth.client.activities.additionalDocumentsActivity.AdditionalDocumentsActivity"
+58-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:46:13-95
+59            android:configChanges="uiMode"
+59-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:49:13-43
+60            android:label="@string/title_activity_additional_documents"
+60-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:47:13-72
+61            android:screenOrientation="portrait"
+61-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:48:13-49
+62            android:theme="@style/AppTheme.NoActionBar" />
+62-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:50:13-56
+63        <activity
+63-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:51:9-56:59
+64            android:name="app.intelehealth.client.activities.patientSurveyActivity.PatientSurveyActivity"
+64-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:52:13-83
+65            android:configChanges="uiMode"
+65-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:55:13-43
+66            android:label="@string/title_activity_patient_survey"
+66-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:53:13-66
+67            android:screenOrientation="portrait"
+67-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:54:13-49
+68            android:theme="@style/AppTheme.NoActionBar" />
+68-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:56:13-56
+69        <activity
+69-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:57:9-64:59
+70            android:name="app.intelehealth.client.activities.physcialExamActivity.PhysicalExamActivity"
+70-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:58:13-81
+71            android:configChanges="uiMode"
+71-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:62:13-43
+72            android:label="@string/title_activity_physical_exam"
+72-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:59:13-65
+73            android:parentActivityName="app.intelehealth.client.activities.pastMedicalHistoryActivity.PastMedicalHistoryActivity"
+73-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:60:13-107
+74            android:screenOrientation="portrait"
+74-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:61:13-49
+75            android:theme="@style/AppTheme.NoActionBar"
+75-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:63:13-56
+76            android:windowSoftInputMode="adjustNothing" />
+76-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:64:13-56
+77        <activity
+77-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:65:9-72:59
+78            android:name="app.intelehealth.client.activities.familyHistoryActivity.FamilyHistoryActivity"
+78-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:66:13-83
+79            android:configChanges="uiMode"
+79-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:68:13-43
+80            android:label="@string/title_activity_family_history"
+80-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:67:13-66
+81            android:parentActivityName="app.intelehealth.client.activities.pastMedicalHistoryActivity.PastMedicalHistoryActivity"
+81-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:69:13-107
+82            android:screenOrientation="portrait"
+82-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:70:13-49
+83            android:theme="@style/AppTheme.NoActionBar"
+83-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:71:13-56
+84            android:windowSoftInputMode="adjustNothing" />
+84-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:72:13-56
+85        <activity
+85-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:73:9-80:59
+86            android:name="app.intelehealth.client.activities.pastMedicalHistoryActivity.PastMedicalHistoryActivity"
+86-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:74:13-93
+87            android:configChanges="uiMode"
+87-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:78:13-43
+88            android:label="@string/title_activity_past_medical_history"
+88-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:75:13-72
+89            android:parentActivityName="app.intelehealth.client.activities.questionNodeActivity.QuestionNodeActivity"
+89-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:76:13-95
+90            android:screenOrientation="portrait"
+90-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:77:13-49
+91            android:theme="@style/AppTheme.NoActionBar"
+91-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:79:13-56
+92            android:windowSoftInputMode="adjustNothing" />
+92-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:80:13-56
+93        <activity
+93-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:81:9-87:59
+94            android:name="app.intelehealth.client.activities.questionNodeActivity.QuestionNodeActivity"
+94-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:82:13-81
+95            android:configChanges="uiMode"
+95-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:85:13-43
+96            android:label="@string/title_activity_question_node"
+96-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:83:13-65
+97            android:screenOrientation="portrait"
+97-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:84:13-49
+98            android:theme="@style/AppTheme.NoActionBar"
+98-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:86:13-56
+99            android:windowSoftInputMode="adjustNothing" />
+99-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:87:13-56
+100        <activity
+100-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:88:9-95:57
+101            android:name="app.intelehealth.client.activities.complaintNodeActivity.ComplaintNodeActivity"
+101-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:89:13-83
+102            android:configChanges="uiMode"
+102-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:91:13-43
+103            android:label="@string/title_activity_complaint_node"
+103-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:90:13-66
+104            android:parentActivityName="app.intelehealth.client.activities.identificationActivity.IdentificationActivity"
+104-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:92:13-99
+105            android:screenOrientation="portrait"
+105-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:93:13-49
+106            android:theme="@style/AppTheme.NoActionBar"
+106-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:94:13-56
+107            android:windowSoftInputMode="stateHidden" />
+107-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:95:13-54
+108        <activity
+108-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:97:9-101:59
+109            android:name="app.intelehealth.client.activities.IntroActivity.IntroActivity"
+109-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:98:13-67
+110            android:configChanges="uiMode"
+110-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:100:13-43
+111            android:screenOrientation="portrait"
+111-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:99:13-49
+112            android:theme="@style/AppTheme.NoActionBar" />
+112-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:101:13-56
+113        <activity
+113-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:103:9-113:20
+114            android:name="app.intelehealth.client.activities.visitSummaryActivity.VisitSummaryActivity"
+114-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:104:13-81
+115            android:configChanges="orientation|keyboardHidden|uiMode"
+115-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:105:13-70
+116            android:label="@string/title_activity_visit_summary"
+116-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:106:13-65
+117            android:parentActivityName="app.intelehealth.client.activities.homeActivity.HomeActivity"
+117-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:107:13-79
+118            android:screenOrientation="portrait"
+118-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:108:13-49
+119            android:theme="@style/AppTheme.NoActionBar" >
+119-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:109:13-56
+120            <meta-data
+120-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:110:13-112:73
+121                android:name="android.support.PARENT_ACTIVITY"
+121-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:111:17-63
+122                android:value=".activities.homeActivity.HomeActivity" />
+122-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:112:17-70
+123        </activity>
+124        <activity
+124-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:114:9-119:59
+125            android:name="app.intelehealth.client.activities.vitalActivity.VitalsActivity"
+125-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:115:13-68
+126            android:configChanges="uiMode"
+126-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:118:13-43
+127            android:label="@string/title_activity_vitals"
+127-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:116:13-58
+128            android:screenOrientation="portrait"
+128-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:117:13-49
+129            android:theme="@style/AppTheme.NoActionBar" />
+129-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:119:13-56
+130        <activity
+130-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:120:9-124:59
+131            android:name="app.intelehealth.client.activities.patientDetailActivity.PatientDetailActivity"
+131-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:121:13-83
+132            android:configChanges="uiMode"
+132-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:123:13-43
+133            android:screenOrientation="portrait"
+133-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:122:13-49
+134            android:theme="@style/AppTheme.NoActionBar" />
+134-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:124:13-56
+135        <activity
+135-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:125:9-130:59
+136            android:name="app.intelehealth.client.activities.cameraActivity.CameraActivity"
+136-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:126:13-69
+137            android:configChanges="uiMode"
+137-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:129:13-43
+138            android:label="@string/title_activity_camera"
+138-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:127:13-58
+139            android:screenOrientation="portrait"
+139-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:128:13-49
+140            android:theme="@style/AppTheme.NoActionBar" />
+140-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:130:13-56
+141        <activity
+141-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:131:9-136:59
+142            android:name="app.intelehealth.client.activities.activitySync.ActivitySync"
+142-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:132:13-65
+143            android:configChanges="uiMode"
+143-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:134:13-43
+144            android:label="@string/title_activity_sync"
+144-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:133:13-56
+145            android:screenOrientation="portrait"
+145-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:135:13-49
+146            android:theme="@style/AppTheme.NoActionBar" />
+146-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:136:13-56
+147        <activity
+147-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:137:9-142:59
+148            android:name="app.intelehealth.client.activities.videoLibraryActivity.VideoLibraryActivity"
+148-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:138:13-81
+149            android:configChanges="uiMode"
+149-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:141:13-43
+150            android:label="@string/title_activity_video_library"
+150-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:139:13-65
+151            android:screenOrientation="portrait"
+151-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:140:13-49
+152            android:theme="@style/AppTheme.NoActionBar" />
+152-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:142:13-56
+153        <activity
+153-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:143:9-148:59
+154            android:name="app.intelehealth.client.activities.activePatientsActivity.ActivePatientActivity"
+154-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:144:13-84
+155            android:configChanges="uiMode"
+155-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:147:13-43
+156            android:label="@string/title_activity_active_patient"
+156-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:145:13-66
+157            android:screenOrientation="portrait"
+157-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:146:13-49
+158            android:theme="@style/AppTheme.NoActionBar" />
+158-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:148:13-56
+159        <activity
+159-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:149:9-154:59
+160            android:name="app.intelehealth.client.activities.todayPatientActivity.TodayPatientActivity"
+160-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:150:13-81
+161            android:configChanges="uiMode"
+161-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:153:13-43
+162            android:label="@string/title_activity_today_patient"
+162-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:151:13-65
+163            android:screenOrientation="portrait"
+163-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:152:13-49
+164            android:theme="@style/AppTheme.NoActionBar" />
+164-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:154:13-56
+165        <activity
+165-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:155:9-171:20
+166            android:name="app.intelehealth.client.activities.searchPatientActivity.SearchPatientActivity"
+166-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:156:13-83
+167            android:configChanges="uiMode"
+167-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:159:13-43
+168            android:label="@string/title_activity_search_patient"
+168-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:157:13-66
+169            android:screenOrientation="portrait"
+169-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:158:13-49
+170            android:theme="@style/AppTheme.NoActionBar" >
+170-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:160:13-56
+171            <intent-filter>
+171-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:161:13-163:29
+172                <action android:name="android.intent.action.SEARCH" />
+172-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:162:17-71
+172-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:162:25-68
+173            </intent-filter>
+174
+175            <meta-data
+175-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:165:13-167:54
+176                android:name="android.app.searchable"
+176-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:166:17-54
+177                android:resource="@xml/searchable" />
+177-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:167:17-51
+178            <meta-data
+178-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:110:13-112:73
+179                android:name="android.support.PARENT_ACTIVITY"
+179-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:111:17-63
+180                android:value=".activities.homeActivity.HomeActivity" />
+180-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:112:17-70
+181        </activity>
+182        <activity
+182-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:172:9-177:59
+183            android:name="app.intelehealth.client.activities.identificationActivity.IdentificationActivity"
+183-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:173:13-85
+184            android:configChanges="uiMode"
+184-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:176:13-43
+185            android:label="@string/title_activity_identification"
+185-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:174:13-66
+186            android:screenOrientation="portrait"
+186-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:175:13-49
+187            android:theme="@style/AppTheme.NoActionBar" />
+187-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:177:13-56
+188        <activity
+188-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:178:9-187:20
+189            android:name="app.intelehealth.client.activities.settingsActivity.SettingsActivity"
+189-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:179:13-73
+190            android:configChanges="orientation|keyboardHidden|uiMode"
+190-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:180:13-70
+191            android:label="@string/title_activity_settings"
+191-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:181:13-60
+192            android:parentActivityName="app.intelehealth.client.activities.homeActivity.HomeActivity"
+192-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:182:13-79
+193            android:screenOrientation="portrait" >
+193-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:183:13-49
+194            <meta-data
+194-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:110:13-112:73
+195                android:name="android.support.PARENT_ACTIVITY"
+195-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:111:17-63
+196                android:value=".activities.homeActivity.HomeActivity" />
+196-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:112:17-70
+197        </activity>
+198        <activity
+198-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:188:9-193:59
+199            android:name="app.intelehealth.client.activities.loginActivity.LoginActivity"
+199-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:189:13-67
+200            android:configChanges="uiMode"
+200-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:192:13-43
+201            android:label="@string/title_activity_login"
+201-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:190:13-57
+202            android:screenOrientation="portrait"
+202-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:191:13-49
+203            android:theme="@style/AppTheme.NoActionBar" />
+203-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:193:13-56
+204        <activity
+204-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:194:9-203:20
+205            android:name="app.intelehealth.client.activities.homeActivity.HomeActivity"
+205-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:195:13-65
+206            android:configChanges="uiMode"
+206-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:198:13-43
+207            android:label="@string/title_activity_home"
+207-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:196:13-56
+208            android:screenOrientation="portrait"
+208-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:197:13-49
+209            android:theme="@style/AppTheme.NoActionBar" >
+209-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:199:13-56
+210            <meta-data
+210-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:110:13-112:73
+211                android:name="android.support.PARENT_ACTIVITY"
+211-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:111:17-63
+212                android:value=".activities.homeActivity.HomeActivity" />
+212-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:112:17-70
+213        </activity>
+214        <activity
+214-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:204:9-214:20
+215            android:name="app.intelehealth.client.activities.splash_activity.SplashActivity"
+215-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:205:13-70
+216            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+216-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:206:13-81
+217            android:screenOrientation="portrait"
+217-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:207:13-49
+218            android:theme="@style/AppTheme.NoActionBar" >
+218-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:208:13-56
+219            <intent-filter>
+219-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:209:13-213:29
+220                <action android:name="android.intent.action.MAIN" />
+220-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:210:17-69
+220-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:210:25-66
+221
+222                <category android:name="android.intent.category.LAUNCHER" />
+222-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:212:17-77
+222-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:212:27-74
+223            </intent-filter>
+224        </activity>
+225        <activity
+225-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:215:9-220:59
+226            android:name="app.intelehealth.client.activities.setupActivity.SetupActivity"
+226-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:216:13-67
+227            android:configChanges="uiMode"
+227-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:219:13-43
+228            android:label="@string/title_activity_setup"
+228-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:217:13-57
+229            android:screenOrientation="portrait"
+229-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:218:13-49
+230            android:theme="@style/AppTheme.NoActionBar" />
+230-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:220:13-56
+231
+232        <service
+232-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:222:9-232:19
+233            android:name="app.intelehealth.client.utilities.OpenMRSAccountAuthenticatorService"
+233-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:223:13-73
+234            android:exported="false" >
+234-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:224:13-37
+235            <intent-filter>
+235-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:225:13-227:29
+236                <action android:name="android.accounts.AccountAuthenticator" />
+236-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:226:17-80
+236-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:226:25-77
+237            </intent-filter>
+238
+239            <meta-data
+239-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:229:13-231:57
+240                android:name="android.accounts.AccountAuthenticator"
+240-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:230:17-69
+241                android:resource="@xml/authenticator" />
+241-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:231:17-54
+242        </service>
+243        <service
+243-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:233:9-237:37
+244            android:name="app.intelehealth.client.services.RunAfterBootService"
+244-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:234:13-57
+245            android:enabled="true"
+245-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:235:13-35
+246            android:exported="false"
+246-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:236:13-37
+247            android:permission="" />
+247-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:237:13-34
+248
+249        <receiver
+249-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:239:9-246:20
+250            android:name="app.intelehealth.client.syncModule.BootCompleteReceiver"
+250-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:240:13-60
+251            android:enabled="true"
+251-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:241:13-35
+252            android:exported="false" >
+252-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:242:13-37
+253            <intent-filter>
+253-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:243:13-245:29
+254                <action android:name="android.intent.action.BOOT_COMPLETED" />
+254-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:244:17-79
+254-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:244:25-76
+255            </intent-filter>
+256        </receiver>
+257
+258        <provider
+258-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:248:9-251:40
+259            android:name="app.intelehealth.client.activities.searchPatientActivity.SearchSuggestionProvider"
+259-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:249:13-86
+260            android:authorities="app.intelehealth.client.activities.searchPatientActivity.SearchSuggestionProvider"
+260-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:250:13-116
+261            android:exported="false" />
+261-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:251:13-37
+262
+263        <service android:name="app.intelehealth.client.services.DownloadService" />
+263-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:253:9-61
+263-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:253:18-58
+264        <service android:name="app.intelehealth.client.services.MyIntentService" />
+264-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:254:9-61
+264-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:254:18-58
+265        <service android:name="app.intelehealth.client.services.LastSyncIntentService" />
+265-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:255:9-67
+265-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:255:18-64
+266        <service android:name="app.intelehealth.client.services.UpdateDownloadPrescriptionService" /> <!-- Firebase Services -->
+266-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:256:9-79
+266-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:256:18-76
+267        <service android:name="app.intelehealth.client.services.firebase_services.MyFirebaseMessagingService" >
+267-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:257:9-261:19
+267-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:257:18-87
+268            <intent-filter>
+268-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:258:13-260:29
+269                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+269-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:259:17-78
+269-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:259:25-75
+270            </intent-filter>
+271        </service>
+272        <service android:name="app.intelehealth.client.services.firebase_services.MyFirebaseInstanceIdService" >
+272-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:262:9-266:19
+272-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:262:18-88
+273            <intent-filter>
+273-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:263:13-265:29
+274                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+274-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:264:17-80
+274-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:264:25-77
+275            </intent-filter>
+276        </service>
+277
+278        <meta-data
+278-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:268:9-270:36
+279            android:name="firebase_crashlytics_collection_enabled"
+279-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:269:13-67
+280            android:value="true" />
+280-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:270:13-33
+281
+282        <activity
+282-->[gun0912.ted:tedpermission:2.2.2] /Users/emk/.gradle/caches/transforms-2/files-2.1/962536b01c1b7f3fd16a6503b859504c/jetified-tedpermission-2.2.2/AndroidManifest.xml:10:9-14:67
+283            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+283-->[gun0912.ted:tedpermission:2.2.2] /Users/emk/.gradle/caches/transforms-2/files-2.1/962536b01c1b7f3fd16a6503b859504c/jetified-tedpermission-2.2.2/AndroidManifest.xml:11:13-75
+284            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+284-->[gun0912.ted:tedpermission:2.2.2] /Users/emk/.gradle/caches/transforms-2/files-2.1/962536b01c1b7f3fd16a6503b859504c/jetified-tedpermission-2.2.2/AndroidManifest.xml:12:13-144
+285            android:screenOrientation="unspecified"
+285-->[gun0912.ted:tedpermission:2.2.2] /Users/emk/.gradle/caches/transforms-2/files-2.1/962536b01c1b7f3fd16a6503b859504c/jetified-tedpermission-2.2.2/AndroidManifest.xml:13:13-52
+286            android:theme="@style/Theme.Transparent.Permission" />
+286-->[gun0912.ted:tedpermission:2.2.2] /Users/emk/.gradle/caches/transforms-2/files-2.1/962536b01c1b7f3fd16a6503b859504c/jetified-tedpermission-2.2.2/AndroidManifest.xml:14:13-64
+287
+288        <provider
+288-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:28:9-34:35
+289            android:name="androidx.work.impl.WorkManagerInitializer"
+289-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:29:13-69
+290            android:authorities="com.mssa.emk.workmanager-init"
+290-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:30:13-68
+291            android:directBootAware="false"
+291-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:31:13-44
+292            android:exported="false"
+292-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:32:13-37
+293            android:multiprocess="true" />
+293-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:33:13-40
+294
+295        <service
+295-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:36:9-41:35
+296            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+296-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:37:13-88
+297            android:directBootAware="false"
+297-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:38:13-44
+298            android:enabled="@bool/enable_system_alarm_service_default"
+298-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:39:13-72
+299            android:exported="false" />
+299-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:40:13-37
+300        <service
+300-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:42:9-48:35
+301            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+301-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:43:13-84
+302            android:directBootAware="false"
+302-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:44:13-44
+303            android:enabled="@bool/enable_system_job_service_default"
+303-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:45:13-70
+304            android:exported="true"
+304-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:46:13-36
+305            android:permission="android.permission.BIND_JOB_SERVICE" />
+305-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:47:13-69
+306
+307        <receiver
+307-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:50:9-55:35
+308            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+308-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:51:13-88
+309            android:directBootAware="false"
+309-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:52:13-44
+310            android:enabled="true"
+310-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:53:13-35
+311            android:exported="false" />
+311-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:54:13-37
+312        <receiver
+312-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:56:9-66:20
+313            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+313-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:57:13-106
+314            android:directBootAware="false"
+314-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:58:13-44
+315            android:enabled="false"
+315-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:59:13-36
+316            android:exported="false" >
+316-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:60:13-37
+317            <intent-filter>
+317-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:62:13-65:29
+318                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+318-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:63:17-87
+318-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:63:25-84
+319                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+319-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:64:17-90
+319-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:64:25-87
+320            </intent-filter>
+321        </receiver>
+322        <receiver
+322-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:67:9-77:20
+323            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+323-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:68:13-104
+324            android:directBootAware="false"
+324-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:69:13-44
+325            android:enabled="false"
+325-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:70:13-36
+326            android:exported="false" >
+326-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:71:13-37
+327            <intent-filter>
+327-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:73:13-76:29
+328                <action android:name="android.intent.action.BATTERY_OKAY" />
+328-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:74:17-77
+328-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:74:25-74
+329                <action android:name="android.intent.action.BATTERY_LOW" />
+329-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:75:17-76
+329-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:75:25-73
+330            </intent-filter>
+331        </receiver>
+332        <receiver
+332-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:78:9-88:20
+333            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+333-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:79:13-104
+334            android:directBootAware="false"
+334-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:80:13-44
+335            android:enabled="false"
+335-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:81:13-36
+336            android:exported="false" >
+336-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:82:13-37
+337            <intent-filter>
+337-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:84:13-87:29
+338                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+338-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:85:17-83
+338-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:85:25-80
+339                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+339-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:86:17-82
+339-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:86:25-79
+340            </intent-filter>
+341        </receiver>
+342        <receiver
+342-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:89:9-98:20
+343            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+343-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:90:13-103
+344            android:directBootAware="false"
+344-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:91:13-44
+345            android:enabled="false"
+345-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:92:13-36
+346            android:exported="false" >
+346-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:93:13-37
+347            <intent-filter>
+347-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:95:13-97:29
+348                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+348-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:96:17-79
+348-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:96:25-76
+349            </intent-filter>
+350        </receiver>
+351        <receiver
+351-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:99:9-110:20
+352            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+352-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:100:13-88
+353            android:directBootAware="false"
+353-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:101:13-44
+354            android:enabled="false"
+354-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:102:13-36
+355            android:exported="false" >
+355-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:103:13-37
+356            <intent-filter>
+356-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:105:13-109:29
+357                <action android:name="android.intent.action.BOOT_COMPLETED" />
+357-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:244:17-79
+357-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:244:25-76
+358                <action android:name="android.intent.action.TIME_SET" />
+358-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:107:17-73
+358-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:107:25-70
+359                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+359-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:108:17-81
+359-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:108:25-78
+360            </intent-filter>
+361        </receiver>
+362        <receiver
+362-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:111:9-120:20
+363            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+363-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:112:13-99
+364            android:directBootAware="false"
+364-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:113:13-44
+365            android:enabled="@bool/enable_system_alarm_service_default"
+365-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:114:13-72
+366            android:exported="false" >
+366-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:115:13-37
+367            <intent-filter>
+367-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:117:13-119:29
+368                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+368-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:118:17-98
+368-->[androidx.work:work-runtime:2.0.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/8cc368ac89ce91b01a1e91edd6c3b2b6/work-runtime-2.0.1/AndroidManifest.xml:118:25-95
+369            </intent-filter>
+370        </receiver>
+371        <!--
+372             FirebaseMessagingService performs security checks at runtime,
+373             but set to not exported to explicitly avoid allowing another app to call it.
+374        -->
+375        <service
+375-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:28:9-35:19
+376            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+376-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:29:13-82
+377            android:directBootAware="true"
+377-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:30:13-43
+378            android:exported="false" >
+378-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:31:13-37
+379            <intent-filter android:priority="-500" >
+379-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:258:13-260:29
+380                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+380-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:259:17-78
+380-->/Users/emk/Desktop/Android-Mobile-Client/app/src/main/AndroidManifest.xml:259:25-75
+381            </intent-filter>
+382        </service>
+383        <service
+383-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:36:9-42:19
+384            android:name="com.google.firebase.components.ComponentDiscoveryService"
+384-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:37:13-84
+385            android:directBootAware="true"
+385-->[com.google.firebase:firebase-common:19.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/200468715c0ea0e53bd8ec6e1d69c179/jetified-firebase-common-19.3.1/AndroidManifest.xml:35:13-43
+386            android:exported="false" >
+386-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:38:13-37
+387            <meta-data
+387-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:39:13-41:85
+388                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+388-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:40:17-119
+389                android:value="com.google.firebase.components.ComponentRegistrar" />
+389-->[com.google.firebase:firebase-messaging:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/b05c03104e5ee664dac733450c44a77b/jetified-firebase-messaging-20.2.1/AndroidManifest.xml:41:17-82
+390            <meta-data
+390-->[com.google.firebase:firebase-crashlytics:17.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/623cfb296c2a6bbaf3da28f536610822/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:16:13-18:85
+391                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+391-->[com.google.firebase:firebase-crashlytics:17.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/623cfb296c2a6bbaf3da28f536610822/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:17:17-115
+392                android:value="com.google.firebase.components.ComponentRegistrar" />
+392-->[com.google.firebase:firebase-crashlytics:17.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/623cfb296c2a6bbaf3da28f536610822/jetified-firebase-crashlytics-17.2.1/AndroidManifest.xml:18:17-82
+393            <meta-data
+393-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/c48af06274b31db612492ebf261c4eed/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:30:13-32:85
+394                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+394-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/c48af06274b31db612492ebf261c4eed/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:31:17-139
+395                android:value="com.google.firebase.components.ComponentRegistrar" />
+395-->[com.google.android.gms:play-services-measurement-api:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/c48af06274b31db612492ebf261c4eed/jetified-play-services-measurement-api-17.5.0/AndroidManifest.xml:32:17-82
+396            <meta-data
+396-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:32:13-34:85
+397                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+397-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:33:17-96
+398                android:value="com.google.firebase.components.ComponentRegistrar" />
+398-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:34:17-82
+399            <meta-data
+399-->[com.google.firebase:firebase-installations:16.3.3] /Users/emk/.gradle/caches/transforms-2/files-2.1/552f10550137cc670c6803f5200e2cda/jetified-firebase-installations-16.3.3/AndroidManifest.xml:17:13-19:85
+400                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+400-->[com.google.firebase:firebase-installations:16.3.3] /Users/emk/.gradle/caches/transforms-2/files-2.1/552f10550137cc670c6803f5200e2cda/jetified-firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
+401                android:value="com.google.firebase.components.ComponentRegistrar" />
+401-->[com.google.firebase:firebase-installations:16.3.3] /Users/emk/.gradle/caches/transforms-2/files-2.1/552f10550137cc670c6803f5200e2cda/jetified-firebase-installations-16.3.3/AndroidManifest.xml:19:17-82
+402            <meta-data
+402-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/emk/.gradle/caches/transforms-2/files-2.1/b1de4cc4ed4163a71732fd06902152c5/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+403                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+403-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/emk/.gradle/caches/transforms-2/files-2.1/b1de4cc4ed4163a71732fd06902152c5/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+404                android:value="com.google.firebase.components.ComponentRegistrar" />
+404-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/emk/.gradle/caches/transforms-2/files-2.1/b1de4cc4ed4163a71732fd06902152c5/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+405        </service>
+406
+407        <receiver
+407-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:37:9-44:20
+408            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+408-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:38:13-78
+409            android:exported="true"
+409-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:39:13-36
+410            android:permission="com.google.android.c2dm.permission.SEND" >
+410-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:40:13-73
+411            <intent-filter>
+411-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:41:13-43:29
+412                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+412-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:42:17-81
+412-->[com.google.firebase:firebase-iid:20.2.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/60ea2b0791bd95480eb249b44a11abc6/jetified-firebase-iid-20.2.1/AndroidManifest.xml:42:25-78
+413            </intent-filter>
+414        </receiver>
+415
+416        <provider
+416-->[com.google.firebase:firebase-common:19.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/200468715c0ea0e53bd8ec6e1d69c179/jetified-firebase-common-19.3.1/AndroidManifest.xml:26:9-31:39
+417            android:name="com.google.firebase.provider.FirebaseInitProvider"
+417-->[com.google.firebase:firebase-common:19.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/200468715c0ea0e53bd8ec6e1d69c179/jetified-firebase-common-19.3.1/AndroidManifest.xml:27:13-77
+418            android:authorities="com.mssa.emk.firebaseinitprovider"
+418-->[com.google.firebase:firebase-common:19.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/200468715c0ea0e53bd8ec6e1d69c179/jetified-firebase-common-19.3.1/AndroidManifest.xml:28:13-72
+419            android:directBootAware="true"
+419-->[com.google.firebase:firebase-common:19.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/200468715c0ea0e53bd8ec6e1d69c179/jetified-firebase-common-19.3.1/AndroidManifest.xml:29:13-43
+420            android:exported="false"
+420-->[com.google.firebase:firebase-common:19.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/200468715c0ea0e53bd8ec6e1d69c179/jetified-firebase-common-19.3.1/AndroidManifest.xml:30:13-37
+421            android:initOrder="100" />
+421-->[com.google.firebase:firebase-common:19.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/200468715c0ea0e53bd8ec6e1d69c179/jetified-firebase-common-19.3.1/AndroidManifest.xml:31:13-36
+422
+423        <activity
+423-->[com.google.android.gms:play-services-base:17.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/889ce4b2379dd85e0e6acae8c9af5871/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+424            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+424-->[com.google.android.gms:play-services-base:17.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/889ce4b2379dd85e0e6acae8c9af5871/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+425            android:exported="false"
+425-->[com.google.android.gms:play-services-base:17.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/889ce4b2379dd85e0e6acae8c9af5871/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+426            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+426-->[com.google.android.gms:play-services-base:17.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/889ce4b2379dd85e0e6acae8c9af5871/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+427
+428        <receiver
+428-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:29:9-33:20
+429            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+429-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:30:13-85
+430            android:enabled="true"
+430-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:31:13-35
+431            android:exported="false" >
+431-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:32:13-37
+432        </receiver>
+433
+434        <service
+434-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:35:9-38:40
+435            android:name="com.google.android.gms.measurement.AppMeasurementService"
+435-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:36:13-84
+436            android:enabled="true"
+436-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:37:13-35
+437            android:exported="false" />
+437-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:38:13-37
+438        <service
+438-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:39:9-43:72
+439            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+439-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:40:13-87
+440            android:enabled="true"
+440-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:41:13-35
+441            android:exported="false"
+441-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:42:13-37
+442            android:permission="android.permission.BIND_JOB_SERVICE" />
+442-->[com.google.android.gms:play-services-measurement:17.5.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/023feaba709a2e4a9c05b081c6166ea6/jetified-play-services-measurement-17.5.0/AndroidManifest.xml:43:13-69
+443
+444        <meta-data
+444-->[com.google.android.gms:play-services-basement:17.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/b59fb498b4b410b2deb106d9a130d241/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+445            android:name="com.google.android.gms.version"
+445-->[com.google.android.gms:play-services-basement:17.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/b59fb498b4b410b2deb106d9a130d241/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+446            android:value="@integer/google_play_services_version" />
+446-->[com.google.android.gms:play-services-basement:17.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/b59fb498b4b410b2deb106d9a130d241/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+447
+448        <service
+448-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/e56b55304a7844c53ddd05d663145451/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:29:9-35:19
+449            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+449-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/e56b55304a7844c53ddd05d663145451/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:30:13-103
+450            android:exported="false" >
+450-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/e56b55304a7844c53ddd05d663145451/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:31:13-37
+451            <meta-data
+451-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/e56b55304a7844c53ddd05d663145451/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:32:13-34:39
+452                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+452-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/e56b55304a7844c53ddd05d663145451/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:33:17-94
+453                android:value="cct" />
+453-->[com.google.android.datatransport:transport-backend-cct:2.3.1] /Users/emk/.gradle/caches/transforms-2/files-2.1/e56b55304a7844c53ddd05d663145451/jetified-transport-backend-cct-2.3.1/AndroidManifest.xml:34:17-36
+454        </service>
+455        <service
+455-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/emk/.gradle/caches/transforms-2/files-2.1/17c3ef132cf26ef8223dbfc2613d3f49/jetified-transport-runtime-2.2.4/AndroidManifest.xml:26:9-30:19
+456            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+456-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/emk/.gradle/caches/transforms-2/files-2.1/17c3ef132cf26ef8223dbfc2613d3f49/jetified-transport-runtime-2.2.4/AndroidManifest.xml:27:13-117
+457            android:exported="false"
+457-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/emk/.gradle/caches/transforms-2/files-2.1/17c3ef132cf26ef8223dbfc2613d3f49/jetified-transport-runtime-2.2.4/AndroidManifest.xml:28:13-37
+458            android:permission="android.permission.BIND_JOB_SERVICE" >
+458-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/emk/.gradle/caches/transforms-2/files-2.1/17c3ef132cf26ef8223dbfc2613d3f49/jetified-transport-runtime-2.2.4/AndroidManifest.xml:29:13-69
+459        </service>
+460
+461        <receiver
+461-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/emk/.gradle/caches/transforms-2/files-2.1/17c3ef132cf26ef8223dbfc2613d3f49/jetified-transport-runtime-2.2.4/AndroidManifest.xml:32:9-34:40
+462            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+462-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/emk/.gradle/caches/transforms-2/files-2.1/17c3ef132cf26ef8223dbfc2613d3f49/jetified-transport-runtime-2.2.4/AndroidManifest.xml:33:13-132
+463            android:exported="false" />
+463-->[com.google.android.datatransport:transport-runtime:2.2.4] /Users/emk/.gradle/caches/transforms-2/files-2.1/17c3ef132cf26ef8223dbfc2613d3f49/jetified-transport-runtime-2.2.4/AndroidManifest.xml:34:13-37
+464
+465        <provider
+465-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/30ea8a1224a56e74ea6957a9b02ebd6f/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+466            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+466-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/30ea8a1224a56e74ea6957a9b02ebd6f/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+467            android:authorities="com.mssa.emk.lifecycle-process"
+467-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/30ea8a1224a56e74ea6957a9b02ebd6f/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+468            android:exported="false"
+468-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/30ea8a1224a56e74ea6957a9b02ebd6f/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+469            android:multiprocess="true" />
+469-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/emk/.gradle/caches/transforms-2/files-2.1/30ea8a1224a56e74ea6957a9b02ebd6f/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+470    </application>
+471
+472</manifest>
